@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: react-app
+    env: node
+    buildCommand: "npm install && npm run build"
+    publishCommand: "npm run build"
+    staticPublishPath: "build"
+    plan: free
+    branch: master
